@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load the dataset from your GitHub repository
-url = 'https://github.com/shamiim611/global_fertility_rate/blob/main/fertility_rate.xls'
+url = 'https://raw.githubusercontent.com/shamiim611/global_fertility_rate/main/fertility_rate.xls'
 df = pd.read_excel(url,engine='xlrd')
 
 # Rename 'Country Name' to 'Country_Name'
