@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # Load the dataset from your GitHub repository
 url = 'https://github.com/shamiim611/global_fertility_rate/blob/main/fertility_rate.xls'
-df = pd.read_excel(url,on_bad_lines='skip')
+df = pd.read_excel(url)
 
 # Rename 'Country Name' to 'Country_Name'
 df.rename(columns={'Country Name': 'Country_Name'}, inplace=True)
