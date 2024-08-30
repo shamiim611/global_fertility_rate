@@ -4,8 +4,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load the dataset from your GitHub repository
-url = 'https://raw.githubusercontent.com/shamiim611/global_fertility_rate/main/fertility_rate.xls'
-df = pd.read_excel(url,engine='xlrd')
+url = 'https://raw.githubusercontent.com/shamiim611/global_fertility_rate/main/fertility_rate.csv'
+df = pd.read_csv(url,on_bad_lines='skip')
 
 # Rename 'Country Name' to 'Country_Name'
 df.rename(columns={'Country Name': 'Country_Name'}, inplace=True)
